@@ -1,0 +1,202 @@
+    1  clear
+    2  pwd
+    3  ls /
+    4  ls /root
+    5  ls /etc
+    6  ls
+    7  ls /
+    8  ls /etc
+    9  ls /
+   10  ls /etc
+   11  ls -ll /etc
+   12  clear
+   13  cd /tmp
+   14  pwd
+   15  mkdir piit
+   16  cd piit
+   17  pwd
+   18  touch apple.txt orange.txt
+   19  touch file{1..10}.txt
+   20  ls
+   21  nano apple.txt
+   22  which nano
+   23  which ls
+   24  which passwd
+   25  which useradd
+   26  which nano
+   27  yum install nano -y
+   28  clear
+   29  nano apple.txt
+   30  cd /
+   31  pwd
+   32  ls /tmp/piit
+   33  find /tmp/piit -name apple.txt
+   34  find  /tmp -mtime -7
+   35  find  /tmp -mtime -1
+   36  clear
+   37  find / -name apple*.*
+   38  clear
+   39  find / -name apple*.txt
+   40  find / -name a*.txt
+   41  find / -name a*.txt > test.txt
+   42  cat test.txt
+   43  find / -type f -name "*.log"
+   44  find / -type -name "*.log"
+   45  find / -type -name *.log
+   46  find / -type f -name "*.log"
+   47  clear
+   48  find / -name /run
+   49  find / -name /run/*.*
+   50  clear
+   51  cd /
+   52  pwd
+   53  find / -size +100M
+   54  find / -size +10M
+   55  find / -size +50M
+   56  clear
+   57  find  / -type f -cmin -60
+   58  clear
+   59  ls -ll
+   60  clear
+   61  ls
+   62  cd /tmp/piit
+   63  ls
+   64  diff apple.txt orange.txt
+   65  nano orange.txt
+   66  diff apple.txt orange.txt
+   67  clear
+   68  file /etc/passwd
+   69  file /tmp/piit/apple.txt
+   70  which ls
+   71  file /usr/bin/ls
+   72  touch ali
+   73  ls
+   74  file ali
+   75  nano ali
+   76  clear
+   77  file ali
+   78  cat apple.txt
+   79  grep "piit" /
+   80  grep "piit" /tmp/piit/
+   81  grep -r "piit" /tmp/piit/
+   82  grep -r "piit" /
+   83  grep -r "piit" /tmp
+   84  grep -r "devops" /tmp
+   85  grep -r "AWS" /tmp
+   86  cat apple.txt
+   87  grep -ri "AWS" /tmp
+   88  grep -ri "ec2*" /etc/passwd
+   89  cat /etc/passwd
+   90  grep -ri "ec2*" /etc/passwd
+   91  clear
+   92  useradd --help
+   93  cleare
+   94  clear
+   95  useradd apple
+   96  cat /etc/passwd
+   97  usermod --help
+   98  usermod -l orange apple
+   99  cat /etc/passwd
+  100  clear
+  101  history
+  102  clear
+  103  ls
+  104  cat apple.txt
+  105  sed -i 's/aws/azure/g' apple.txt
+  106  cat apple.txt
+  107  clear
+  108  less apple.txt
+  109  ip a >> apple.txt
+  110  cat apple.txt
+  111  clear
+  112  less apple.txt
+  113  head apple.txt
+  114  tail apple.txt
+  115  clear
+  116  tail apple.txt
+  117  history
+  118  clear
+  119  cat apple.txt
+  120  clear
+  121  head apple.txt
+  122  clear
+  123  tail apple.txt
+  124  tail --help
+  125  clear
+  126  tail --help
+  127  clear
+  128  tail -n 3 apple.txt
+  129  clear
+  130  history
+  131  clear
+  132  free -h
+  133  clear
+  134  cd /
+  135  clear
+  136  free -h
+  137  clear
+  138  free -h
+  139  ls
+  140  clear
+  141  cat /proc/cpuinfo
+  142  lscpu
+  143  uname -r
+  144  uname -a
+  145  clear
+  146  history
+  147  df -h
+  148  clear
+  149  lsblk
+  150  ip a
+  151  nmcli device show
+  152  clear
+  153  uptime
+  154  top
+  155  lshw
+  156  clear
+  157  lspci
+  158  lsusb
+  159  dnf install lsusb
+  160  lsusb
+  161  clear
+  162  jourctl
+  163  journalctl
+  164  journalctl -b
+  165  clear
+  166  journalctl -b
+  167  clear
+  168  journalctl --help
+  169  journalctl -f
+  170  journalctl --help
+  171  journalctl -f
+  172  clear
+  173  journalctl -u httpd
+  174  journalctl -u sshd
+  175  clear
+  176  ip a
+  177  ping 8.8.8.8
+  178  ping agni.com
+  179  tracert 8.8.8.8
+  180  yum install NetworkManager
+  181  tracert 8.8.8.8
+  182  hping 8.8.8.8
+  183  pathping 8.8.8.8
+  184  traceroute 8.8.8.8
+  185  clear
+  186  systemctl status firewalld
+  187  yum install firewalld
+  188  clear
+  189  systemctl status firewalld
+  190  systemctl start firewalld
+  191  systemctl status firewalld
+  192  history
+  193  systemctl stop firewalld
+  194  systemctl status firewalld
+  195  q
+  196  systemctl start firewalld
+  197  firewall-cmd --list-all
+  198  firewall-cmd --zone=public --add-port=80/tcp --permanent
+  199  firewall-cmd --reload
+  200  firewall-cmd --list-all
+  201  yum install httpd -y
+  202  history
